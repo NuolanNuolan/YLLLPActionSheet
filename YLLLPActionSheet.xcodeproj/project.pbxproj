@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA9DC2521F9592E00E03324 /* 截图.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9BA9DC2421F9592E00E03324 /* 截图.PNG */; };
 		EA70C8F41F4AD56200C7CD6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70C8F31F4AD56200C7CD6C /* main.m */; };
 		EA70C8F71F4AD56200C7CD6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70C8F61F4AD56200C7CD6C /* AppDelegate.m */; };
 		EA70C8FA1F4AD56200C7CD6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70C8F91F4AD56200C7CD6C /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		EA70C90D1F4AD56200C7CD6C /* YLLLPActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70C90C1F4AD56200C7CD6C /* YLLLPActionSheetTests.m */; };
 		EA70C9181F4AD56200C7CD6C /* YLLLPActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70C9171F4AD56200C7CD6C /* YLLLPActionSheetUITests.m */; };
 		EA70C9281F4AD65000C7CD6C /* LPActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70C9271F4AD65000C7CD6C /* LPActionSheet.m */; };
-		EA70C92A1F4AD80600C7CD6C /* 截图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA70C9291F4AD80600C7CD6C /* 截图.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BA9DC2421F9592E00E03324 /* 截图.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "截图.PNG"; sourceTree = "<group>"; };
 		EA70C8EF1F4AD56200C7CD6C /* YLLLPActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLLLPActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70C8F31F4AD56200C7CD6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA70C8F51F4AD56200C7CD6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		EA70C9191F4AD56200C7CD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA70C9261F4AD65000C7CD6C /* LPActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPActionSheet.h; sourceTree = "<group>"; };
 		EA70C9271F4AD65000C7CD6C /* LPActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPActionSheet.m; sourceTree = "<group>"; };
-		EA70C9291F4AD80600C7CD6C /* 截图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "截图.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 				EA70C8FE1F4AD56200C7CD6C /* Assets.xcassets */,
 				EA70C9001F4AD56200C7CD6C /* LaunchScreen.storyboard */,
 				EA70C9031F4AD56200C7CD6C /* Info.plist */,
-				EA70C9291F4AD80600C7CD6C /* 截图.jpg */,
+				9BA9DC2421F9592E00E03324 /* 截图.PNG */,
 				EA70C8F21F4AD56200C7CD6C /* Supporting Files */,
 			);
 			path = YLLLPActionSheet;
@@ -223,7 +223,7 @@
 				TargetAttributes = {
 					EA70C8EE1F4AD56200C7CD6C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = EFW772SY3Z;
+						DevelopmentTeam = T5U7VTGQMY;
 						ProvisioningStyle = Automatic;
 					};
 					EA70C9071F4AD56200C7CD6C = {
@@ -265,8 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA9DC2521F9592E00E03324 /* 截图.PNG in Resources */,
 				EA70C9021F4AD56200C7CD6C /* LaunchScreen.storyboard in Resources */,
-				EA70C92A1F4AD80600C7CD6C /* 截图.jpg in Resources */,
 				EA70C8FF1F4AD56200C7CD6C /* Assets.xcassets in Resources */,
 				EA70C8FD1F4AD56200C7CD6C /* Main.storyboard in Resources */,
 			);
@@ -443,7 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EFW772SY3Z;
+				DEVELOPMENT_TEAM = T5U7VTGQMY;
 				INFOPLIST_FILE = YLLLPActionSheet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -456,7 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EFW772SY3Z;
+				DEVELOPMENT_TEAM = T5U7VTGQMY;
 				INFOPLIST_FILE = YLLLPActionSheet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +534,7 @@
 				EA70C91E1F4AD56200C7CD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA70C91F1F4AD56200C7CD6C /* Build configuration list for PBXNativeTarget "YLLLPActionSheetTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +543,7 @@
 				EA70C9211F4AD56200C7CD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA70C9221F4AD56200C7CD6C /* Build configuration list for PBXNativeTarget "YLLLPActionSheetUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +552,7 @@
 				EA70C9241F4AD56200C7CD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

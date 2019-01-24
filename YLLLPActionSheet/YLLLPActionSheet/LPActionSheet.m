@@ -10,6 +10,18 @@ static const CGFloat kButtonTitleFontSize = 18.0f;
 static const NSTimeInterval kAnimateDuration = 0.5f;
 static const NSTimeInterval kAnimateDurationDismiss = 0.3f;
 
+//判断是否是ipad
+#define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//判断iPhoneX
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断iPHoneXr
+#define IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断iPhoneXs
+#define IS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断iPhoneXs Max
+#define IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define kBotIphonexHeight ((IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES)?34:0)
+
 @interface LPActionSheet ()
 
 /** block回调 */
@@ -141,7 +153,7 @@ static const NSTimeInterval kAnimateDurationDismiss = 0.3f;
             actionSheetHeight += kSeparatorHeight;
             
             UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            cancelButton.frame = CGRectMake(0, actionSheetHeight, self.frame.size.width, kRowHeight);
+            cancelButton.frame = CGRectMake(0, actionSheetHeight, self.frame.size.width, kRowHeight+kBotIphonexHeight);
             cancelButton.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             cancelButton.tag = 0;
             cancelButton.titleLabel.font = [UIFont systemFontOfSize:kButtonTitleFontSize];
@@ -150,9 +162,10 @@ static const NSTimeInterval kAnimateDurationDismiss = 0.3f;
             [cancelButton setBackgroundImage:normalImage forState:UIControlStateNormal];
             [cancelButton setBackgroundImage:highlightedImage forState:UIControlStateHighlighted];
             [cancelButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            [cancelButton setTitleEdgeInsets:UIEdgeInsetsMake(-10, 0, 10, 0)];
             [_actionSheetView addSubview:cancelButton];
             
-            actionSheetHeight += kRowHeight;
+            actionSheetHeight += kRowHeight+kBotIphonexHeight;
         }
         
         _actionSheetView.frame = CGRectMake(0, self.frame.size.height, self.frame.size.width, actionSheetHeight);
